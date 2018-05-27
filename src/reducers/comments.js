@@ -4,7 +4,7 @@ import {
   REMOVE_COMMENT,
   THUMB_UP,
   THUMB_DOWN
-} from './actions'
+} from './actions';
 
 // arrow function? const po co? https://redux.js.org/basics/example-todo-list
 const comments = (state = [], action) => {
