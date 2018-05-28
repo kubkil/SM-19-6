@@ -5,31 +5,32 @@ export const REMOVE_COMMENT = 'REMOVE_COMMENT';
 export const THUMB_UP = 'THUMB_UP';
 export const THUMB_DOWN = 'THUMB_DOWN';
 
+// ; https://redux.js.org/basics/actions?
 // payload: text?
 export const addComment = text => ({
   type: ADD_COMMENT,
   id: uuid.v4(),
   text
-})
+});
 
 export const editComment = (text, id) => ({
   type: EDIT_COMMENT,
   id,
   text
-})
+});
 
 export const removeComment = id => ({
   type: REMOVE_COMMENT,
   id
-})
+});
 
 // index zamiast id?
-export const thumbUp = commentId => ({
+export const thumbUp = id => ({
   type: THUMB_UP,
-  id: commentId
-})
+  id
+});
 
-export const thumbDown = commentId => ({
+export const thumbDown = id => ({
   type: THUMB_DOWN,
-  id: commentId
-})
+  id
+});
