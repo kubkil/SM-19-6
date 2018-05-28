@@ -1,1 +1,1 @@
-const users = (state = [], action) => state;
+export const users = (state = [], action) => state;
