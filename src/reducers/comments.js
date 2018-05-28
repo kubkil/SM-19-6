@@ -6,10 +6,11 @@ import {
   THUMB_DOWN
 } from '../actions/actions';
 
-// arrow function? const po co? https://redux.js.org/basics/example-todo-list export?
+// https://redux.js.org/basics/example-todo-list export?
 export const comments = (state = [], action) => {
   switch (action.type) {
     case ADD_COMMENT:
+      console.log(action);
       return [
         ...state,
         {
@@ -18,7 +19,7 @@ export const comments = (state = [], action) => {
           votes: 0
         }
       ]
-    // gdzie jest comments?
+
     case EDIT_COMMENT:
       return state.map(comment => {
         if (comment.id === action.id) {
