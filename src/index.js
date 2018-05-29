@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// https://redux.js.org/basics/example-todo-list import render?
 import { render } from 'react-dom'
 import './css/index.css';
 import App from './components/App';

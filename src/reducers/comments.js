@@ -6,11 +6,9 @@ import {
   THUMB_DOWN
 } from '../actions/actions';
 
-// https://redux.js.org/basics/example-todo-list export?
 export const comments = (state = [], action) => {
   switch (action.type) {
     case ADD_COMMENT:
-      console.log(action);
       return [
         ...state,
         {
