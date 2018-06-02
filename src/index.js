@@ -5,15 +5,14 @@ import './css/index.css';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import { createLogger } from 'redux-logger';
+import { createStore } from 'redux';
 import reducer from './reducers/reducer';
 import {addComment} from './actions/actions';
+import DevTools from './DevTools';
 
-const logger = createLogger();
 const store = createStore(
   reducer,
-  applyMiddleware(logger)
+  DevTools.instrument()
 );
 
 store.dispatch(addComment('pierwszy komentarz'));
