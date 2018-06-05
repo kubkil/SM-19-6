@@ -15,9 +15,6 @@ const store = createStore(
   DevTools.instrument()
 );
 
-store.dispatch(addComment('pierwszy komentarz'));
-store.dispatch(addComment('drugi komentarz'));
-
 ReactDOM.render(
   <Provider store={store}>
     <App />
