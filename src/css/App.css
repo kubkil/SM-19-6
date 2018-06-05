@@ -11,6 +11,14 @@ ul {
   margin: 20px 0;
 }
 
-.thumb {
+.thumb-icon {
+  margin: 0 10px;
+}
+
+.remove-icon {
+  margin: 0 10px;
+}
+
+.edit-icon {
   margin: 0 10px;
 }
