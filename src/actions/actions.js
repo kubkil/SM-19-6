@@ -12,7 +12,7 @@ export const addComment = text => ({
   text
 });
 
-export const editComment = (text, id) => ({
+export const editComment = (id, text) => ({
   type: EDIT_COMMENT,
   id,
   text

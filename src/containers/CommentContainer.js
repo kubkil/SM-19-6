@@ -6,7 +6,7 @@ import { thumbUp, thumbDown, editComment, removeComment } from '../actions/actio
 const mapDispatchToProps = dispatch => ({
   thumbUp: (id) => dispatch(thumbUp(id)),
   thumbDown: (id) => dispatch(thumbDown(id)),
-  editComment: (text,id) => dispatch(editComment(text, id)),
+  editComment: (id, text) => dispatch(editComment(id, text)),
   removeComment: (id) => dispatch(removeComment(id))
 });
 
